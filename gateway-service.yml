@@ -11,8 +11,8 @@ eureka:
  
 zuul:
   routes:
-    book-service:
-      path: /book-service/**
+    project-service:
+      path: /project-service/**
       sensitive-headers: Set-Cookie,Authorization
     rating-service:
       path: /rating-service/**
