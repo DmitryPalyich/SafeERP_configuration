@@ -4,8 +4,6 @@
 server:
   port: 8084
 spring:
-  security:
-    enabled: false
   application:
     name: project-manager
   cloud:
@@ -39,8 +37,3 @@ eureka:
     registryFetchIntervalSeconds: 5
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
-management:
-  security:
-    enabled: false
-security: 
-  basic: enabled
