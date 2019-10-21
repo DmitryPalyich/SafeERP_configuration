@@ -1,4 +1,6 @@
 spring:
+  security:
+    enabled: false
   application:
     name: gateway-service
 server:
@@ -39,3 +41,7 @@ hystrix:
         isolation:
           thread:
             timeoutInMilliseconds=600000
+
+management:
+  security:
+    enabled: false
