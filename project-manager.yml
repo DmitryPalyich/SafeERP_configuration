@@ -5,7 +5,7 @@ server:
   port: 8084
 spring:
   application:
-    name: project-service
+    name: project-manager
   cloud:
     config:
       label: latest
