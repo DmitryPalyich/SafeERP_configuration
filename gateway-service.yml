@@ -12,7 +12,7 @@ eureka:
 zuul:
   routes:
     project-service:
-      path: /project-service/**
+      path: /project-manager/**
       sensitive-headers: Set-Cookie,Authorization
     rating-service:
       path: /rating-service/**
