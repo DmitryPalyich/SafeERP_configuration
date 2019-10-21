@@ -14,8 +14,8 @@ zuul:
     project-manager:
       path: /project-manager/**
       sensitive-headers: Set-Cookie,Authorization
-    rating-service:
-      path: /rating-service/**
+    iteration-manager:
+      path: /iteration-manager/**
       sensitive-headers: Set-Cookie,Authorization
     discovery-server:
       path: /discovery/**
@@ -24,12 +24,12 @@ zuul:
       
 hystrix:
   command:
-    book-service:
+    project-manager:
       execution:
         isolation:
           thread:
             timeoutInMilliseconds=600000
-    rating-service:
+    iteration-manager:
       execution:
         isolation:
           thread:
