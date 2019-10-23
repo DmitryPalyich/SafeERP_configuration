@@ -2,7 +2,7 @@
 #   Database Settings
 ###
 server:
-  port: 8084
+  port: 8083
 spring:
   application:
     name: iteration-manager
