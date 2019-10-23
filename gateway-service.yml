@@ -19,6 +19,9 @@ zuul:
     iteration-manager:
       path: /iteration-manager/**
       sensitive-headers: Set-Cookie,Authorization
+    profile-manager:
+      path: /profile-manager/**
+      sensitive-headers: Set-Cookie,Authorization
     discovery-server:
       path: /discovery/**
       sensitive-headers: Set-Cookie,Authorization
@@ -36,6 +39,11 @@ hystrix:
         isolation:
           thread:
             timeoutInMilliseconds=600000
+    profile-manager:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds=600000        
     discovery-server:
       execution:
         isolation:
