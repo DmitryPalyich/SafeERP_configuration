@@ -6,6 +6,8 @@ server:
 spring:
   application:
     name: project-manager
+  quartz: 
+    job-store-type: jdbc
   cloud:
     config:
       label: latest
