@@ -8,6 +8,8 @@ spring:
     name: project-manager
   quartz: 
     job-store-type: jdbc
+    jdbc:
+      initialize-schema: always
   cloud:
     config:
       label: latest
@@ -39,7 +41,13 @@ eureka:
     registryFetchIntervalSeconds: 5
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
-      
+     
+     
+using:
+  spring:
+    schedulerFactory: true
+     
+     
 org:
   quartz:
     jobStore:
