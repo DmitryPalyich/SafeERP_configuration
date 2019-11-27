@@ -47,15 +47,3 @@ using:
   spring:
     schedulerFactory: true
      
-     
-org:
-  quartz:
-    jobStore:
-      class: org.quartz.impl.jdbcjobstore.JobStoreTX
-      driverDelegateClass: org.quartz.impl.jdbcjobstore.StdJDBCDelegate
-      dataSource: quartzDataSource      
-        quartzDataSource:
-          url: jdbc:postgresql://10.10.58.62:3389/postgres?reWriteBatchedInserts=true
-          platform: postgres
-          username: postgres
-          password:
