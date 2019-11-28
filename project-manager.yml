@@ -46,4 +46,5 @@ eureka:
 using:
   spring:
     schedulerFactory: true
-     
+quartz:
+  enabled: true     
