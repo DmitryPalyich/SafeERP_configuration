@@ -20,8 +20,6 @@ spring:
     password:
     driver-class-name: org.postgresql.Driver
     initialization-mode: always
-  database:
-    driverClassName: org.postgresql.Driver
   jpa:
     hibernate:
       ddl-auto: create
