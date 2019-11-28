@@ -34,7 +34,8 @@ spring:
           batch_size: 50
         temp:
           use_jdbc_metadata_defaults: false
-
+  profiles:
+    active: dev
 eureka:
   client:
     region: default
