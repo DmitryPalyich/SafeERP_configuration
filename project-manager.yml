@@ -33,32 +33,7 @@ spring:
   open-in-view: false
   profiles:
     active: dev
-  quartz:
-    jdbc:
-      initialize-schema: never
-    job-store-type: jdbc
-    properties:
-      org:
-        quartz:
-          jobStore:
-            class: org.quartz.impl.jdbcjobstore.JobStoreTX
-            driverDelegateClass: org.quartz.impl.jdbcjobstore.StdJDBCDelegate
-            isClustered: true
-            misfireThreshold: 60000
-            tablePrefix: qrtz_
-            useProperties: true
-          plugin:
-            shutdownHook:
-              class: org.quartz.plugins.management.ShutdownHookPlugin
-              cleanShutdown: true
-          scheduler:
-            instanceId: AUTO
-            instanceIdGenerator:
-              class: com.gazis.projectmanager.quartz.CustomQuartzInstanceIdGenerator
-            instanceName: project-manager
-          threadPool:
-            threadCount: 20    
-    
+  
 eureka:
   client:
     region: default
