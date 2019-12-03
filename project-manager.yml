@@ -30,6 +30,7 @@ spring:
           batch_size: 50
         temp:
           use_jdbc_metadata_defaults: false
+  open-in-view: false
   profiles:
     active: dev
   quartz:
