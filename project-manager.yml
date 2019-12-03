@@ -11,7 +11,7 @@ spring:
       label: latest
   dataSourceClassName: org.postgresql.ds.PGSimpleDataSource    
   datasource:
-    jdbcUrl: jdbc:postgresql://10.10.58.62:3389/postgres?reWriteBatchedInserts=true
+    url: jdbc:postgresql://10.10.58.62:3389/postgres?reWriteBatchedInserts=true
     platform: postgres
     username: postgres
     password:
