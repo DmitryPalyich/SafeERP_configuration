@@ -53,7 +53,7 @@ spring:
           scheduler:
             instanceId: AUTO
             instanceIdGenerator:
-              class: com.helixz.quartz.demo.component.CustomQuartzInstanceIdGenerator
+              class: com.gazis.projectmanager.quartz.CustomQuartzInstanceIdGenerator
             instanceName: project-manager
           threadPool:
             threadCount: 20    
