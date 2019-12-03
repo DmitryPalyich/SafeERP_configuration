@@ -35,7 +35,8 @@ spring:
     active: dev
   quartz:
     jdbc:
-      initialize-schema: true
+      initialize-schema: always
+      schema: secs
     job-store-type: jdbc
     properties:
       org:
