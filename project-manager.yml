@@ -36,7 +36,6 @@ spring:
   quartz:
     jdbc:
       initialize-schema: always
-      schema: secs
     job-store-type: jdbc
     properties:
       org:
