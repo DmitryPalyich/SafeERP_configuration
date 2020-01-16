@@ -22,6 +22,9 @@ zuul:
     profile-manager:
       path: /profile-manager/**
       sensitive-headers: Set-Cookie,Authorization
+    sonar-analyzer:
+      path: /sonar-analyzer/**
+      sensitive-headers: Set-Cookie,Authorization
     discovery-server:
       path: /discovery/**
       sensitive-headers: Set-Cookie,Authorization
@@ -43,7 +46,12 @@ hystrix:
       execution:
         isolation:
           thread:
-            timeoutInMilliseconds=600000        
+            timeoutInMilliseconds=600000   
+    sonar-analyzer:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds=600000   
     discovery-server:
       execution:
         isolation:
